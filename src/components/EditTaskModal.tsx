@@ -9,7 +9,7 @@ interface EditTaskModalProps {
 }
 
 export const EditTaskModal = ({ task, onClose, onUpdate }: EditTaskModalProps) => {
-  const handleSubmit = (taskData: Omit<Task, "id" | "completed" | "reminded" | "completedAt" | "missedEmailSent" | "overdueSoundPlayed">) => {
+  const handleSubmit = (taskData: Omit<Task, "id" | "completed" | "remindersSent" | "completedAt"  | "overdueSoundPlayed">) => {
     onUpdate({
       ...task,
       ...taskData,

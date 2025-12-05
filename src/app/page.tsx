@@ -284,7 +284,7 @@ export default function Home() {
       <main className="max-w-2xl mx-auto">
         <header className="mb-8 text-center transform hover:scale-105 transition-transform duration-300">
           <h1 className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2 drop-shadow-sm">
-            Task Master Junior 🚀
+            Task'Attaque 🚀
           </h1>
           <p className="text-xl text-gray-600 font-medium">Gère tes missions comme un super-héros ! 🦸‍♂️</p>
         </header>
