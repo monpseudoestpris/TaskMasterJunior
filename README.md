@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## EMAIL
+Ouvrez le fichier .env.local qui vient d'apparaître dans votre éditeur.
+Remplacez votre-email@gmail.com par votre vraie adresse Gmail.
+Remplacez xxxx xxxx xxxx xxxx par un Mot de passe d'application Google.
+Note : Votre mot de passe Gmail habituel ne fonctionnera pas.
+Allez sur https://myaccount.google.com/apppasswords pour en générer un (il faut avoir la validation en 2 étapes activée).
+Une fois le fichier sauvegardé, redémarrez votre serveur de développement (Ctrl+C puis npm run dev) pour que les changements soient pris en compte.
+Si vous ne voulez pas configurer l'email pour l'instant, vous pouvez ignorer cette erreur rouge dans la console, elle n'empêche pas l'application de fonctionner (les sons et les confettis marchent quand même !).

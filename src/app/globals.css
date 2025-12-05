@@ -5,11 +5,14 @@
   --foreground: #171717;
 }
 
+body {
+  font-family: var(--font-fredoka), sans-serif;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-fredoka), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +26,27 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both infinite;
+}
+
+.animate-urgent {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite, shake 2s ease-in-out infinite;
+}
+
+@keyframes alarm {
+  0%, 100% { background-color: #fee2e2; border-color: #fca5a5; transform: scale(1); }
+  50% { background-color: #fecaca; border-color: #ef4444; transform: scale(1.05); }
+}
+
+.animate-alarm {
+  animation: alarm 0.5s ease-in-out infinite, shake 0.5s ease-in-out infinite;
 }
